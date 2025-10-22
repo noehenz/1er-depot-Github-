@@ -1,0 +1,27 @@
+# Le fichier .gitignore sert à indiquer à Git quels fichiers ou dossiers ne doivent pas être suivis ni enregistrés dans le dépôt.
+
+# IDE et éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Système d'exploitation
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Cache navigateurs (si tests locaux)
+.cache/

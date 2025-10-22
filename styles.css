@@ -1,136 +1,141 @@
-/* Reset basique */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #222;
-}
-
-/* Container central */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
     color: #fff;
-    padding: 20px 0;
-}
 
-header .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    display: inline-block;
-}
+    .image-container {
+        background: none;
 
-header nav {
-    float: right;
-}
+    }
 
-header nav ul {
-    list-style: none;
-}
+    .header h1 span {
+        color: darkgoldenrod;
+    }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
+    header {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        height: 80px;
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    {
+        margin-left: 10px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
 
-header nav ul li a:hover {
-    color: #ffd700; /* couleur gold */
 }
+        /* ---------- STYLE DU MENU ---------- */
+        .menu {
+            width: 100%;
+            padding: 15px 0;
+            position: absolute; /* reste en haut de la page */
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
 
-/* Hero */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0;
-    background: #fff;
-}
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end; /* aligne les liens à droite */
+            align-items: center;
+            gap:25px;
+            margin-right: 10px;
+        }
 
-.hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-}
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
 
-.hero-text {
-    flex: 1;
-}
+        .menu li a:hover {
+            color: darkgoldenrod; /* effet gold au survol */
+        }
 
-.hero-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ffd700; /* gold */
-}
+        /* ---------- VERSION MOBILE ---------- */
+        @media screen and (max-width: 768px) {
+            .menu ul {
+                justify-content: center; /* centre les éléments sur mobile */
+                margin-right: 0;
+                flex-direction: column; /* menu vertical */
+                padding: 20px 0;
+            }
 
-.hero-text p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
+            .mobile-hide {
+                display: none; /* cache les liens quand tu veux les masquer */
+            }
+        }
 
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #ffd700;
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
 
-.btn:hover {
-    background: #e6c200;
-}
+    }
 
-.hero-image img {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
+    .intro {
+        text-align: center;
+        padding: 25px 25px;
+        border-top: 1px solid darkgoldenrod;
+        border-bottom: 1px solid darkgoldenrod;
+    }
 
-/* À propos */
-.apropos {
-    background: #f1f1f1;
-    padding: 60px 0;
-    text-align: center;
-}
+    .intro h2 span {
+        color: darkgoldenrod;
+        margin: 5px 0;
+    }
+    .intro blockquote span {
+        color: darkgoldenrod;
+    }
 
-.apropos h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #222;
-}
+    .produits {
+        padding: 40px 20px;
+        text-align: center;
+    }
 
-.apropos p {
-    font-size: 1.1em;
-    max-width: 700px;
-    margin: 0 auto;
-}
+    .produits h2 span {
+        font-size: 28px;
+        color: darkgoldenrod;
+        margin-bottom: 30px;
+    }
 
-/* Footer */
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+
+
+
+
+    .carte-produit {
+        background-color: #111;
+        border: 1px solid darkgoldenrod;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+    .carte-produit h3 span {
+    color: white;
+    }
+    .produits h3 span:hover {
+        color: darkgoldenrod;
+    }
+    .carte-produit img {
+        width: 100%;
+        border-bottom: 1px solid darkgoldenrod;
+        margin-bottom: 15px;
+    }
+
+    .carte-produit h3 {
+        color: white;
+        margin: 10px 0;
+    }
+
+    footer {
+        background-color: #111;
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid darkgoldenrod;
+        font-size: 14px;
+    }
+
+
